@@ -1,20 +1,7 @@
-CashFlow — API de Gerenciamento Financeiro
+## Sobre o Projeto
 
-Projeto backend desenvolvido em **C# e .NET**, voltado ao gerenciamento de fluxo financeiro e registro de despesas. A aplicação foi estruturada seguindo princípios de **Clean Architecture**, com separação clara entre API, aplicação, domínio, infraestrutura, comunicação e tratamento de exceções.
+Esta **API** , desenvolvida utilizando **.NET 8** , adota os princípios do **Domain-Driven Design (DDD)** para oferecer uma solução estruturada e eficaz no gerenciamento de despesas pessoais. O objetivo principal é permitir que os usuários registrem suas despesas, detalhando informações como título, dados e hora, descrição, valor e tipo de pagamento, com os dados armazenados de forma segura em um banco de dados **MySQL** .
 
-A arquitetura foi organizada para promover **manutenibilidade, escalabilidade, baixo acoplamento e testabilidade**, utilizando casos de uso para centralizar as operações da aplicação e contratos de Request/Response para padronizar a comunicação da API.
+A arquitetura da API baseia-se em **REST** , utilizando métodos **HTTP** padrão para uma comunicação eficiente e simplificada. Além disso, é complementado por uma documentação **Swagger** , que fornece uma interface gráfica interativa para que os desenvolvedores possam explorar e testar os endpoints de maneira fácil.
 
-**Principais componentes:**
-
-* API REST desenvolvida com ASP.NET Core;
-* Separação em camadas seguindo princípios de Clean Architecture;
-* Controllers, Filters e Middlewares;
-* Casos de uso para operações financeiras;
-* DTOs de Request e Response;
-* Enumeração de tipos de pagamento;
-* Tratamento centralizado de exceções;
-* Mensagens de erro com suporte à localização;
-* Camada de infraestrutura isolada;
-* Estrutura preparada para testes automatizados.
-
-O projeto demonstra conhecimentos em **desenvolvimento backend com C#/.NET, arquitetura de software, organização de projetos, APIs REST, separação de responsabilidades e boas práticas de desenvolvimento**.
+Dentre os pacotes **NuGet** usados, o **AutoMapper** é o responsável pelo mapeamento entre objetos de domínio e requisição/resposta, diminuindo a necessidade de código repetitivo e manual. O **FluentAssertions** é utilizado em testes de unidade para tornar as verificações mais legíveis, ajudando a escrever testes claros e compreensíveis. Para as validações, o **FluentValidation** é usado para implementar regras de validação de forma simples e intuitiva nas classes de requisições, mantendo o código limpo e fácil de manter. Por fim, o **EntityFramework** atua como um ORM (Object-Relational Mapper) que simplifica as interações com o banco de dados, permitindo o uso de objetos .NET para manipular dados diretamente, sem a necessidade de lidar com consultas SQL.
